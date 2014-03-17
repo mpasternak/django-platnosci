@@ -1,0 +1,22 @@
+status: OK
+trans_id: 1024
+trans_pos_id: 1
+trans_session_id: 2
+trans_order_id: 3
+trans_status: 99
+trans_amount: 400
+trans_desc: Opis
+trans_ts: 1
+trans_pay_type: FOO
+trans_pay_gw: BAR
+trans_pay_gw_name: Quux
+trans_desc2: ...
+trans_create: 2010-01-01 00:00:00
+trans_init: 2010-01-01 00:00:00
+trans_sent: 2010-01-01 00:00:00
+trans_recv: 2010-01-01 00:00:00
+trans_cancel: 2010-01-01 00:00:00
+trans_auth_fraud: FOO
+trans_sig: 07110d3e1ede704bc0563f4d5c59f3fb
+python-calc-sum-for-test: import hashlib; hashlib.md5('12399400Opis1ustaw-mnie').hexdigest()
+TODO-1: nie pamietam, w jakim formacie wysylana jest data w polach _init, _sent, _create...

@@ -1,0 +1,7 @@
+django-platnosci - django support classess for platnosci.pl
+with periodic tasks support using celery
+
+(C) 2009, 2010, 2011 FHU Kagami, http://fhu-kagami.pl/
+
+This application is distributed under the terms of MIT License. NO WARRANTY.
+
