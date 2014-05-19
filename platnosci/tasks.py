@@ -32,6 +32,7 @@ class UpdateDefinitionsTask(PeriodicTask):
 
     run_every = timedelta(days = 2)
 
+    @transaction.atomic
     def run(self, **kwargs):
 
         logger = self.get_logger(**kwargs)
@@ -47,6 +48,7 @@ class UpdateDefinitionsTask(PeriodicTask):
             return False
 
         cnt = 0
+
         for paytype in xml.getElementsByTagName('paytype'):
             cnt += 1
             def _get(n):
@@ -84,6 +86,8 @@ class FakeLogger:
 
 class UpdateOutgoingTransactionTask(Task):
 
+
+    @transaction.atomic
     def run(self, pot_id, **kwargs):
 
         # logger = self.get_logger(**kwargs)
