@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
     
 setup(
     name = 'django-platnosci',
-    version = '0.8.1',
+    version = '0.8.2',
     author = 'FHU Kagami',
     author_email = 'info@fhu-kagami.pl',
     url = 'http://fhu-kagami.pl/',

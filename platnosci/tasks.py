@@ -13,6 +13,7 @@ import traceback
 from urllib import urlencode
 import urllib2
 
+from django.db import transaction
 from django.core.cache import cache
 
 from celery.task import PeriodicTask, Task
